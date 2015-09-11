@@ -1,0 +1,40 @@
+go forward
+turn right 180 degrees
+go forward
+go forward
+turn right 180 degrees
+go forward
+turn right 90 degrees
+go forward
+go forward
+turn right 90 degrees
+go forward
+
+next letter
+
+do four times:
+	go forward
+	turn right 90 degrees
+
+
+next letter
+
+turn right 90 degrees
+go forward
+go forward
+turn right 180 degrees
+go forward
+turn right 90 degrees
+go forward
+turn right 90 degrees
+go forward
+
+next letter
+
+go forward
+turn right 180 degrees
+go forward
+turn right 90 degrees
+go forward
+turn right 90 degrees
+go forward
