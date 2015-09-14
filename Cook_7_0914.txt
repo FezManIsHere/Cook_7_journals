@@ -1,0 +1,18 @@
+How would you explain the importanct of organizing one's thoughts
+and not proceeding in a haphazard manner?
+
+I would explain to them  that you don't just start "teh codes," you
+have to think about what you are actually going to do. Going at a
+project without any direction often leads to mistakes that could
+have been avoided often, yet now mean a restart. This whole thing could
+have all been avoided if you had just taken the time to do some
+pseudocode.
+
+Today you will finish creating an image of your Processing art
+overlaid with code.
+
+Why?
+
+Because it is cool to know the things you can do with code,
+and showing our code helps others understand both how we did it and
+how it works.
