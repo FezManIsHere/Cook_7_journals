@@ -1,0 +1,6 @@
+1) What is pseudocode - What is it good for?
+Pseudocode is rough draft code, and it is good for jotting down your ideas for how you
+need to put together your actual code.
+
+2) More specifically, why will we use it?
+We will use it because it helps get our ideas into coherent coding thoughts.

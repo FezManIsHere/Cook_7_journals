@@ -1,0 +1,19 @@
+Here is my first journal created using Kosole. Yesterday/the day before, 
+we used Git commands to make a Github repository, got our directory up and
+our first document created. We also took notes to make sure we could
+ a. understand how it works, and
+ b. be able to replicate it.
+
+The commands we will need to use everyday to make our journal are: 
+
+ cd (dir name),
+ git init,
+ pico (journalname),
+ edit file 
+ git add myfilename,
+ git commit -m "This is my journal for (date)"
+ git push -u origin master.
+ 
+The last one sends the completed journal to GitHub.
+ Some of the commands we used to set up our stuff yesterday were things like
+ git config and git remote add origin (web address).
