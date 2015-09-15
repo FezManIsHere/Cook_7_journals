@@ -1,0 +1,7 @@
+What is an IDE?
+IDE stands for Integrated Development Environment. It's a type of
+program.
+
+What is it good for?
+It is good for/was made for helping programmers and developers
+build software.
