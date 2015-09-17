@@ -1,0 +1,7 @@
+What are the five different primitve Java data types? What are they used for?
+
+- float (32-bit)
+- boolean (true or false, on or off)
+- int (integer [whole numbers])
+- string (collection of chars)
+- char (characters)
