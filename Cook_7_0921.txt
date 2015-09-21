@@ -1,0 +1,9 @@
+Have  you recieved credit for all journals?
+Yes, yes I have
+
+Why is it important that you use the naming convention specified when naming files?
+It is important because you might not be given credit for something if you didn't
+name it in a way that is identifiable by the person giving credit for it.
+
+What is the command to copy in Linux? How about copying all of a directory to the current directory?
+cp -r (dir you want to move) (dir you want to move it to)
