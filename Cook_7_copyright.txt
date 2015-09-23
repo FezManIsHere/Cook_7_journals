@@ -1,0 +1,23 @@
+Copyright- The right people gain for making original ideas or projects.
+Copyleft- Freely accessible content as long as free users don't copyright it. Also, anything made with it must be copylefted.
+Fair Use- Content that can be used for a limited amount of purposes without the owners' express permission
+Free Speech- The right to speak your mind, freely (speak as you will)
+Free Software- Software that you can modify and distribute as you will
+Freeware- Software available for free (no moneyzzz)
+Public Domain- Works that cannot be copyrighted or owned, which can be for several reasons.
+File-Sharing- Sharing files through a medium, such as Google Drive, Dropbox, etc.
+Piracy- The illegal copying of programs
+Plagarism- The direct copying without permission or credit shown of content
+Infringement- The violation of a law
+Proprietary- Relating to an owner or ownership
+Open Source- Software that has it's code available for all to see and modify/download
+GNU GPL- GNU's terms for their software (General Public License)
+License- A permit to own something
+MIT License- Software license created by MIT. It is the most common kind of license.
+Apache License- License used by the Apache Software Foundation that requires that you include the license with the software that you have modified.
+EULA- End User License Agreement
+Creative Commons- Non-profit orginazation trying to make a large database of free pubicly-accessible content
+
+GNU GPL Questions:
+1.
+
