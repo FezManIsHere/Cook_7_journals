@@ -1,0 +1,11 @@
+Why did Steve Ballmer call the GPL a virus?
+He called it a virus because to him it attaches itself to everything it touches in an intellectual-property way.
+
+What is the relationship/difference between open source and proprietary software?
+Open source software can be changed modified, and freely used for any reason without copyright issues but proprietary software
+reserves all rights and freedoms and you can't change or redistribute the program.
+
+What are the differences between the GPL and MIT license?
+The MIT license allows you to not have to make your proprietary code open source. You can encrypt the code or whatever, as long as
+the MIT license notice is part of it. Meanwhile, the GPL requires that all software that you develop and distribute must give all
+users the same rights as you, selling, modify, distribute, and your proprietary code is no longer proprietary, it has to be open source.
