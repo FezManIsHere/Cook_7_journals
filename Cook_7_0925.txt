@@ -1,0 +1,10 @@
+Paid license- Licenses that must be purchased.
+Shareware- Proprietary software that is initially free to gain users and popularity
+Trialware- Software that has been released for free during the trial period where it is being tested/evaluated
+Ad-ware- Software that pays for itself by having ads inside of it that occasionally pop up
+Crippleware- Software that is a partial trial that doesn't have the full amount of features
+Freemium- Software that is basically P2W. To get anywhere quickly, you have to paty for in-software stuff
+FreeWare- Software that is available free of charge (can't modify or redistribute)
+Richard Stallman- The man who created many of the tools and compilers usen in Linux. Also the creator of GPL
+Lawrence Lessig- A professor of law who is all about protecting the rights of consumers
+Eben Moglen- Free software advocate
