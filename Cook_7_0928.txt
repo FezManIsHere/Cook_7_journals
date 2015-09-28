@@ -1,0 +1,8 @@
+How can you count in Java?
+You can use "for (int i = 0; 1 < [number you want it to go to]; 1++)
+
+How can you check to see if a number is divisible?
+You can check using [number you want to test] % [number to test it with]
+
+How can you track to see if a number has a divisor?
+Use the % with numbers lower to see if it equals zero
