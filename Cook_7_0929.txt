@@ -1,0 +1,6 @@
+What are methods? What are they good for?
+Methods are the equivalent of functions. You give a name to a set of commands to be called upon later. Methods are good for saving
+trouble when using repetitive code over and over again.
+
+How can you use methods to find primes? 
+You could probably use mehods to find primes by setting the method as a test for numbers and %s.
