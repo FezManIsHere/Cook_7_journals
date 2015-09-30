@@ -14,17 +14,21 @@ public class Cook_7_primes {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-            for (int i = 0; i < 101; i++){
-                if (i % 2 != 0) {
-                    if (i % 5 != 0){
-                    }
-            }
-            }
+    boolean isEven (int somenumber) {
+        return (somenumber % 2 == 0);
     }
-    
-
-
+    boolean isOdd (int somenumber) {
+        return (somenumber % 2 == 1);
+    }
+    static boolean isPrime (int somenumber) {
+        int divisor = 0;
+        for (int i = 2; i < somenumber; i++) {
+            if (somenumber % i == 0) {
+                divisor += 1;
+            }
+        }
+        return (divisor == 0);
+    }
 
 
 
