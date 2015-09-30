@@ -20,7 +20,8 @@ public class Cook_7_evens {
         
         int even = 0;
         int odd = 0;
-        for (int i = 0; i < 100; i++){}
+        for (int i = 0; i < 100; i++){
+        
             if(i % 2 == 0) {
                 System.out.println(i + " is even");
                 even++;
@@ -28,7 +29,7 @@ public class Cook_7_evens {
                 System.out.println(i + " is odd");
                 odd++;
             }
-            
+        }
         
         System.out.println(even + " numbers are even");
         System.out.println(odd + " numbers are odd");
@@ -39,7 +40,7 @@ public class Cook_7_evens {
         frequently.
         */
         
-    
+        
     }
 
 

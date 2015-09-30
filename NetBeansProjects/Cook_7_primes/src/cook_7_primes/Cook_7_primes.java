@@ -10,11 +10,15 @@ package cook_7_primes;
  * @author Ramborux
  */
 public class Cook_7_primes {
-
-    /**
-     * @param args the command line arguments
-     */
-    boolean isEven (int somenumber) {
+    public static void main(String[] args) {
+    
+    for (int i = 0; i < 100; i++) {
+        if (isPrime(i)) {
+            System.out.println(i + " is prime.");
+        }
+    }
+}
+boolean isEven (int somenumber) {
         return (somenumber % 2 == 0);
     }
     boolean isOdd (int somenumber) {
@@ -29,8 +33,6 @@ public class Cook_7_primes {
         }
         return (divisor == 0);
     }
-
-
 
 
 }
