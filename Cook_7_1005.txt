@@ -1,0 +1,4 @@
+What are code comments? What are they good for?
+Code comments are notes that you put into your codes. They are extremely helpful for knowing why a code does what it does, making things
+like modifying or just learning how it works sooooo much easier. They are kinda a pain to keep up with, though, if you are the one doing
+the coding and leaving the comments.
