@@ -1,0 +1,11 @@
+What are methods?
+Methods are Java versions of functions.
+
+What are classes?
+Groupings of methods and other things that can be used over and over again.
+
+What is an instance?
+One command inside of a class.
+
+What are class methods?
+Class methods are methods that belong to a class. All instances in that class can use, or do, that method.
