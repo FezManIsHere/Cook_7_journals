@@ -1,0 +1,11 @@
+What is a Java class?
+A Java class is a grouping of methods and instances that can be used over and over again
+
+What  might a Java class be for JavaFX?
+It might be "drawShape"
+
+What might a method be for class?
+It might be :
+boolean isDivisiblebyten (int somenumber) {
+	return (somenumber % 10 == 0);
+}
