@@ -1,0 +1,14 @@
+What are your tentative thoughts / plans for your art project?
+I am considering either trying to recreate my processing art, or possibly just a random generating polygon-thing.
+
+What might be methods you will use?
+I might use a method that generates random numbers
+
+How might you incorporate a for loop?
+I might make something that has a line that uses my method, turns, uses my method, turns, so on, etc
+
+How might you incorporate, if, else if, else?
+I could use an if else for a timer that ends the program
+
+What math might you use?
+I might use random ints and time maths.
