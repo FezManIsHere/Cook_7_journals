@@ -1,0 +1,4 @@
+So far, I have my program use our challenge0 code, but instead of printing text, it creates different colored circles down a diagonal path. This
+may seem nonsensicle in the picture form, but it really does show the pattern. My end goal (which may or may not become a reality) is to have th
+first point start in the middle and have the rest spiral out from it, but I have yet to discover how the trig functions make that happen. Anyway,
+this is what I have so far.
