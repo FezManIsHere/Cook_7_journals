@@ -117,6 +117,8 @@ public class Cook_20_MethodMadness extends Application {
             }
         }
     }
+
+
     static void drawPixel(int x, int y, GraphicsContext gc){
         
         gc.fillOval(x, y, 20, 20);
@@ -155,6 +157,7 @@ public class Cook_20_MethodMadness extends Application {
 	    drawPixel( x + x0, -y + y0, gc);
 	    drawPixel( y + x0, -x + y0, gc);
 	    y++;
+            
 	    if (decisionOver2<=0){
 	      decisionOver2 += 2 * y + 1;   // Change in decision criterion for y -> y+1
 	    }else{
