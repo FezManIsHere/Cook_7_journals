@@ -35,6 +35,7 @@ public class Cook_20_MethodMadness extends Application {
         Canvas canvas = new Canvas(1000, 1000);
         GraphicsContext gc = canvas.getGraphicsContext2D();
         drawShapes(gc);
+        drawCircle((int) canvas.getWidth(),(int) canvas.getHeight(), 500, canvas, gc);
         root.getChildren().add(canvas);
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
@@ -116,7 +117,10 @@ public class Cook_20_MethodMadness extends Application {
             }
         }
     }
-
+    static void drawPixel(int x, int y, GraphicsContext gc){
+        
+        gc.fillOval(x, y, 20, 20);
+    }
     static boolean isDivisiblebytwo(int somenumber) {
         return (somenumber % 2 == 0);
     }
@@ -132,4 +136,33 @@ public class Cook_20_MethodMadness extends Application {
     static boolean isDivisiblebyeleven(int somenumber) {
         return (somenumber % 11 == 0);
     }
+    static void drawCircle(int x0, int y0, int radius, Canvas canvas, GraphicsContext gc){
+	  int x = radius;
+	  int y = 0;
+	  int decisionOver2 = 1 - x;   // Decision criterion divided by 2 evaluated at x=r, y=0
+	  int imageWidth = (int) canvas.getWidth();
+	  int imageHeight = (int) canvas.getHeight();
+	 
+	
+	
+	  while(x >= y){
+	    drawPixel( x + x0,  y + y0, gc);
+	    drawPixel( y + x0,  x + y0, gc);
+	    drawPixel(-x + x0,  y + y0, gc);
+	    drawPixel(-y + x0,  x + y0, gc);
+	    drawPixel(-x + x0, -y + y0, gc);
+	    drawPixel(-y + x0, -x + y0, gc);
+	    drawPixel( x + x0, -y + y0, gc);
+	    drawPixel( y + x0, -x + y0, gc);
+	    y++;
+	    if (decisionOver2<=0){
+	      decisionOver2 += 2 * y + 1;   // Change in decision criterion for y -> y+1
+	    }else{
+	      x--;
+	      decisionOver2 += 2 * (y - x) + 1;   // Change for y -> y+1, x -> x-1
+	    }
+	  }
+	 
+	}
+
 }
