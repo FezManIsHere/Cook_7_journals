@@ -1,0 +1,2 @@
+What is the purpose of the code art that you created?
+The purpose of the code art we just created was to: a.demonstrate our knowledge of methods and b.show our understanding of Java and JavaFX in general.
