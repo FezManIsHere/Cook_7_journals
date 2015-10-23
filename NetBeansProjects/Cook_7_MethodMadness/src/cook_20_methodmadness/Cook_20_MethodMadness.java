@@ -1,31 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package cook_20_methodmadness;
 
-import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.layout.StackPane;
-import javafx.stage.Stage;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
-import javafx.scene.shape.ArcType;
 import javafx.stage.Stage;
-import java.util.Random;
-import java.util.Scanner;
 
-/**
- *
- * @author Ramborux
- */
 public class Cook_20_MethodMadness extends Application {
 
     @Override
@@ -42,14 +24,6 @@ public class Cook_20_MethodMadness extends Application {
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
-
-    /**
-     * @param args the command line arguments
-     */
-    /*private void drawShapes(GraphicsContext gc) {
-     gc.setFill(Color.GREEN);
-     gc.fillOval(10, 60, 30, 30);
-     }*/
     private void drawBackground(GraphicsContext gc) {
         gc.setFill(Color.BLACK);
         gc.fillRect(0, 0, 1000, 1000);
@@ -152,8 +126,6 @@ public class Cook_20_MethodMadness extends Application {
             }
         }
     }
-
-
     static void drawPixel(int x, int y, GraphicsContext gc){
         
         gc.fillOval(x, y, 20, 20);
@@ -174,18 +146,14 @@ public class Cook_20_MethodMadness extends Application {
         return (somenumber % 11 == 0);
     }
     static void drawCircle(int x0, int y0, int radius, Canvas canvas, GraphicsContext gc){
-	  int x = radius;
-	  int y = -2000;
-	  int decisionOver2 = 1 - x;   // Decision criterion divided by 2 evaluated at x=r, y=0
-	  int imageWidth = (int) canvas.getWidth();
-	  int imageHeight = (int) canvas.getHeight();
-	  int r = 0;
-          int g = 0;
-          int b = 0;
-         
-	
-	
-	  while(x >= y){
+	int x = radius;
+	int y = -2000;
+	int decisionOver2 = 1 - x;   // Decision criterion divided by 2 evaluated at x=r, y=0
+        int r = 0;
+        int g = 0;
+        int b = 0;
+          
+        while(x >= y){
 	    drawPixel( x + x0,  y + y0, gc);
 	    drawPixel( y + x0,  x + y0, gc);
 	    drawPixel(-x + x0,  y + y0, gc);
