@@ -15,9 +15,23 @@ public class Cook_7_GuessingGame {
     /**
      * @param args the command line arguments
      */
+    static int realNumber;
+    static int maybeNumber;
+    static String name;
+    static Scanner scan = new Scanner(System.in);
+    static Random why = new Random();
+    
     public static void main(String[] args) {
-        Scanner input1 = new Scanner(System.in);
+        realNumber = why.nextInt(10);
+        System.out.println("What is your name?");
+        name = scan.nextLine();
         System.out.println("Guess a number from 1 to 10");
+        maybeNumber = scan.nextInt();
+        if(maybeNumber != realNumber) {
+            System.out.println(name + ", you are wrong. You guessed " + maybeNumber + ", but the real number is " + realNumber);
+        } else if(maybeNumber == realNumber) {
+            System.out.println(name + ", you are right! You guessed " + maybeNumber + ", and the real number is also " + realNumber);
+        }
     }
     
 }
