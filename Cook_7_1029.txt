@@ -1,0 +1,5 @@
+Is your guessing game a game? Why or why not?
+Technically, yes, it is, because it is an interactive project that takes inpout and gives output.
+
+What would make it better?
+Finishing it.
