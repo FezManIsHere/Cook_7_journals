@@ -22,16 +22,49 @@ public class Cook_7_GuessingGame {
     static Random why = new Random();
     
     public static void main(String[] args) {
+        playGame();
+        
+    }
+    private static void playGame() {
+        int tries = 1;
+        genNum();
+        getName();
+        getGuess();
+        checkNumber(tries);
+    }
+    private static void genNum() {
         realNumber = why.nextInt(10);
-        System.out.println("What is your name?");
+    }
+    private static void getName() {
+    System.out.println("What is your name?");
         name = scan.nextLine();
+}
+    private static void getGuess() {
         System.out.println("Guess a number from 1 to 10");
         maybeNumber = scan.nextInt();
-        if(maybeNumber != realNumber) {
-            System.out.println(name + ", you are wrong. You guessed " + maybeNumber + ", but the real number is " + realNumber);
-        } else if(maybeNumber == realNumber) {
-            System.out.println(name + ", you are right! You guessed " + maybeNumber + ", and the real number is also " + realNumber);
+}
+    private static void checkNumber(int tries) {
+        if(tries < 3 & maybeNumber != realNumber) {
+            System.out.println(name + ", you are wrong. You guessed " + maybeNumber + ". You have " + (3 - tries) + " tries left");
+                tries++;
+                getGuess();
+                checkNumber(tries);
+        }else if(maybeNumber == realNumber) {
+            if (tries == 1) {
+                System.out.println(name + ", you are right! You guessed " + maybeNumber + ", and that is the real number! It only took you " + (tries) + " try!");
+            } else {
+                System.out.println(name + ", you are right! You guessed " + maybeNumber + ", and that is the real number! It only took you " + (tries) + " tries!");
+            }
+        } 
+        
+        else {
+            System.out.println("Sorry, but you are out of tries.");
         }
     }
-    
+
+
+
+
+
+
 }
