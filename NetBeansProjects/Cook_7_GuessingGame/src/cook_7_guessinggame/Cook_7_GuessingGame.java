@@ -57,17 +57,17 @@ public class Cook_7_GuessingGame {
         }else if(maybeNumber == realNumber) {
             if (tries == 1) {
                 System.out.println(name + ", you are right! You guessed " + maybeNumber + ", and that is the real number! It only took you " + (tries) + " try! Play again? (y/n)");
-                playAgain = scan.next().equals("y");
+                playAgain = scan.next().contains("y");
             } 
             else {
                 System.out.println(name + ", you are right! You guessed " + maybeNumber + ", and that is the real number! It only took you " + (tries) + " tries! Play again? (y/n)");
-                playAgain = scan.next().equals("y");
+                playAgain = scan.next().contains("y");
             }
         } 
         
         else {
             System.out.println("Sorry, but you are out of tries. Play again? (y/n)");
-            playAgain = scan.next().equals("y");
+            playAgain = scan.next().contains("y");
             }
             }
         
