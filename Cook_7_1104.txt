@@ -1,0 +1,14 @@
+What is a method?
+A method is a seperate peice of code in which you can make a series of steps and name that code so that you can call that code later instead of having
+to re-type it all the time.
+
+Which methods did you use and how did you use them in your guessing game program?
+I used getGuess to ask for numbers, genNum to get the starting number, playGame for the code to just have the game without restarting, and checkNumber
+to verify the guessed number against the real one.
+
+What is a while loop?
+A while loop is something that allows you to do something over and over, assuming that certain parameters (conditions) are met.
+
+How did you use a while loop, boolean, and counter in your guessing game? 
+I used a while loop to keep my game going over and over again as long as the user wants, a boolean to determine whether to continue the while loop,
+and a counter to count the number of tries.
