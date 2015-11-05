@@ -1,0 +1,11 @@
+What are strings?
+Strings are lists of characters.
+
+What are they good for?
+Strings are good for names, places, etc.
+
+What are some string methods?
+str.substring();, str.length();, etc.
+
+How do we identify string methods? 
+We can identify string methods by the compatabilty of those methods with strings given.
