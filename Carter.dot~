@@ -1,0 +1,25 @@
+digraph sample_map {
+A [label="Start"]  //node B
+B [label="You wake up in a strange room"] //node E
+
+C [label="You stand up"]
+D [label="You fall back asleep"]
+E [label="You don't notice\nthe smell and die"]
+
+F [label="You don't see the\nmonster until he is upon you"]
+G [label="You find a light switch\nand turn it on"]
+H [label="You fall back asleep"]
+
+
+A->B [label="commands", fontcolor=darkgreen ]
+
+B->C [label="Why does\nit smell?"]
+B->D [label="Sleep"]
+B->E [label="else"]
+D -> B
+
+C->F [label="Wait/\nelse"]
+C->H [label="Sleep"]
+C->G [label="Turn on\nthe lights"]
+H - > C
+}
