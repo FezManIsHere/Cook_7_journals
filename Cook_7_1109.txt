@@ -1,0 +1,11 @@
+Are you ready to begin coding your game?
+No.
+
+Why or why not?
+Because I have not finished coming up with a story, not to mention that I haven't finished my .dot file.
+
+What will be your biggest challenges?
+Figuring out the best way to call upon previous questions.
+
+Why? 
+Because I am not familiar with how the methods for questions work precisly, and I am planning on making questions that go back to previous questions.
