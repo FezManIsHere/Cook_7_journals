@@ -2,26 +2,59 @@ digraph sample_map {
 A [label="Start"]  //node B
 B [label="You wake up in a strange room"] //node E
 
+A->B [label="commands", fontcolor=darkgreen ]
+
 C [label="You stand up"]
 D [label="You fall back asleep"]
-E [label="You don't notice\nthe smell and die"]
-
-F [label="You don't see the\nmonster until he is upon you"]
-G [label="You find a light switch\nand turn it on"]
-H [label="You fall back asleep"]
-
-I [label=""]
-
-
-A->B [label="commands", fontcolor=darkgreen ]
+E [label="You don't notice\nthe smell and pass out"]
 
 B->C [label="Why does\nit smell?"]
 B->D [label="Sleep"]
 B->E [label="else"]
 D -> B
+E -> B
+
+F [label="You don't see the\nmonster until he is upon you"]
+G [label="You find a light switch\nand turn it on"]
+H [label="You fall back asleep"]
 
 C->F [label="Wait/\nelse"]
 C->H [label="Sleep"]
 C->G [label="Turn on\nthe lights"]
 H -> B
+F -> B
+
+I [label="You see a table, your bed, and a\ngiant monster with his hands covering his eyes"]
+J [label="You turn off the light,\nlay down, and fall back asleep"]
+K [label="You stare at the wall, giving the\nmonster the time it needs to recover and\nattack you"]
+
+G -> I [label="Look around"]
+G -> J [label="Sleep"]
+G -> K [label="Else"]
+J -> B
+K -> B
+
+L [label="You say Hi to the monster, and\nhe offers you breakfast"]
+M [label="You can't go to sleep anymore"]
+N [label="You sit there and stare, until\nthe monster knocks you out"]
+
+I -> L [label="Say hi"]
+I -> M [label="Sleep"]
+I -> N [label="Else"]
+N -> B
+M -> I
+
+O [label="You eat, and then give him your\ndishes. He moves to the side"]
+P [label="You dont eat, and he knocks you unconscious"]
+
+L -> O [label="Eat"]
+L -> P [label="Else"]
+P -> B
+
+Q [label="You leave the room and win"]
+R [label="You stand there, lose all of your\nenergy, and pass out"]
+
+O -> Q [label="Leave room"]
+O -> R [label="Else"]
+R -> B
 }
