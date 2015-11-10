@@ -1,0 +1,8 @@
+In your game, how can you track what challenges the player has solved?
+You just add boolean methods or counters.
+
+How can you track HP?
+Save an integer and update it with mathematical functions (e.g. -, +, etc).
+
+items? 
+Create an array.
