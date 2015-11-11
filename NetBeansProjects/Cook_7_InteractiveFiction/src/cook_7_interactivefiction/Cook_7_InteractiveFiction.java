@@ -21,39 +21,39 @@ public class Cook_7_InteractiveFiction {
     public static void game() {
         System.out.println("You wake up in a strange room");
         answer = scan.next().toLowerCase();
-        if (answer.contains("Why does it smell?")){
+        if (answer.contains("why does it smell")){
             System.out.println("You stand up");
             answer = scan.next().toLowerCase();
-            if(answer.contains("Turn on the lights")) {
+            if(answer.contains("turn on the lights")) {
                 System.out.println("You find a light switch and turn it on");
                 answer = scan.next().toLowerCase();
-                if(answer.contains("Look around")) {
+                if(answer.contains("look around")) {
                     System.out.println("You see a table, your bed, and a giant monster with his hands covering his hands covering his eyes");
                     answer = scan.next().toLowerCase();
-                    if (answer.contains("Hi")) {
+                    if (answer.contains("hi")) {
                         
-                    }else if (answer.contains("Sleep")) {
+                    }else if (answer.contains("sleep")) {
                         System.out.println("You can't go to sleep anymore, so you sit there ans stare until the monster knocks you out");
                         game();
                     } else {
                         System.out.println("You sit there and stare, until the monster knocks you out");
                         game();
                     }
-                } else if(answer.contains("Sleep")) {
+                } else if(answer.contains("sleep")) {
                     System.out.println("You turn off the light, lay down, and fall back asleep");
                     game();
                 } else {
                     System.out.println("You stare at the wall, giving the monster the time it needs to recover and attack you");
                     game();
                 }
-            } else if(answer.contains("Sleep")) {
+            } else if(answer.contains("sleep")) {
                 System.out.println("You fall back asleep");
                 game();
             } else {
                 System.out.println("You don't see the monster until he is upon you.");
                 game();
             }
-        } else if(answer.contains("Sleep")) {
+        } else if(answer.contains("sleep")) {
             System.out.println("You fall back asleep");
             game();
         } else {
