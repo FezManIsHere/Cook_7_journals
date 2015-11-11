@@ -1,0 +1,8 @@
+In your game, what challenges must your player solve?
+They must solve cryptic questions/random statements, getting an answere out of them.
+
+How will you specifically track whether they have been solved?
+I will just keep the user moving down a waterfall code pattern (always moving on in the plot).
+
+Provide variable names and types. Classes if applicable. 
+I have a scanner named scan and a string named answer.
