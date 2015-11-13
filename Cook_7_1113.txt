@@ -1,0 +1,6 @@
+How will you use while loops in your game? Why?
+I will use it to offer to the user to play again, just to keep them from having to re-open the app if they want to play again.
+
+How will you use methods in your game? Why?
+I will create them and then call them, to allow myself to seperate code and call pieces of it without calling all of it over again and manually
+splicing it.
