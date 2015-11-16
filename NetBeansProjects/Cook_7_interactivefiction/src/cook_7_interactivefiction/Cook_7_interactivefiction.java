@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package cook_7_interactivefiction;
 import java.util.Scanner;
 
@@ -10,11 +5,12 @@ public class Cook_7_interactivefiction {
     static Scanner scan = new Scanner(System.in);
     static String answer;
     static boolean playAgain = false;
+    static String name;
     
     public static void intro(){
         System.out.println("This is a game not for the weak-minded. Be warned");
         System.out.println("");
-    }
+    } //Intro...simple enough
     
     public static void rules() {
         System.out.println("Some basic rules:");
@@ -23,15 +19,16 @@ public class Cook_7_interactivefiction {
         System.out.println("Second, this game CAN be solved without knowing anything, it just takes patience, creative thinking, and a little bit of rage.");
         System.out.println("Third, mistakes will loop you back through the starting scene. Yes, you have to restart every time you answer wrong, however far you may have gotten.");
         System.out.println("");
-    }
+    } //Just some rules to help you understand how the game is played
     
     public static void main(String[] args) {
+        name();
         playAgain = true;
         while (playAgain) {
            intro();
            rules();
            game();
-       }
+       } //while loop to allow you to keep playing the game, assuming you win, of course
     }
     public static void game() {
         
@@ -57,103 +54,79 @@ public class Cook_7_interactivefiction {
                                 answer = scan.nextLine().toLowerCase();
                                 if(answer.contains("look")) {
                                     System.out.println("You see a witch on a broom coming right at you. You leap and fall down the stairs, landing on your knees.");
-                                    if (){
+                                    answer = scan.nextLine().toLowerCase();
+                                    if(answer.contains("wait")) {
+                                        System.out.println("You wait, and a boulder rolls past");
+                                        answer = scan.nextLine().toLowerCase();
                                         
+                                    } else {
+                                        System.out.println("You walk forward, and are hit by the giant boulder");
+                                        clear();
+                                        game();
                                     }
                                 } else {
                                     System.out.println("You see the flying broomstick just a bit too late. A loud crash of glass on wooden floooring is the last thing you remember");
-                                    System.out.println("");
-                                    System.out.println("");
-                                    System.out.println("");
-                                    System.out.println("");
-                                    System.out.println("");
+                                    clear();
                                     game();
                                 }
                             } else {
                                 System.out.println("You stand there, lose all your energy, and then pass out. So close");
-                                System.out.println("");
-                                System.out.println("");
-                                System.out.println("");
-                                System.out.println("");
-                                System.out.println("");
+                                clear();
                                 game();
                             }
                         } else {
                             System.out.println("You don't eat, so the monster knocks you out for being rude");
-                            System.out.println("");
-                            System.out.println("");
-                            System.out.println("");
-                            System.out.println("");
-                            System.out.println("");
+                            clear();
                             game();
                         }
                     }else if (answer.contains("sleep")) {
                         System.out.println("You can't go to Sleep anymore, so you sit there ans stare until the monster knocks you out");
-                        System.out.println("");
-                        System.out.println("");
-                        System.out.println("");
-                        System.out.println("");
-                        System.out.println("");
+                        clear();
                         game();
                     } else {
                         System.out.println("You sit there and stare, until the monster knocks you out");
-                        System.out.println("");
-                        System.out.println("");
-                        System.out.println("");
-                        System.out.println("");
-                        System.out.println("");
+                        clear();
                         game();
                     }
                 } else if(answer.contains("sleep")) {
                     System.out.println("You turn off the light, lay down, and fall back asleep");
-                    System.out.println("");
-                    System.out.println("");
-                    System.out.println("");
-                    System.out.println("");
-                    System.out.println("");
+                    clear();
                     game();
                 } else {
                     System.out.println("You stare at the wall, giving the monster the time it needs to recover and attack you");
-                    System.out.println("");
-                    System.out.println("");
-                    System.out.println("");
-                    System.out.println("");
-                    System.out.println("");
+                    clear();
                     game();
                 }
             } else if(answer.contains("sleep")) {
                 System.out.println("You fall back aSleep");
-                System.out.println("");
-                System.out.println("");
-                System.out.println("");
-                System.out.println("");
-                System.out.println("");
+                clear();
                 game();
             } else {
                 System.out.println("You don't see the monster until he is upon you.");
-                System.out.println("");
-                System.out.println("");
-                System.out.println("");
-                System.out.println("");
-                System.out.println("");
+                clear();
                 game();
             }
         } else if(answer.contains("sleep")) {
             System.out.println("You fall back asleep");
-            System.out.println("");
-            System.out.println("");
-            System.out.println("");
-            System.out.println("");
-            System.out.println("");
+            clear();
             game();
         } else {
             System.out.println("You don't notice the smell and pass out");
-            System.out.println("");
-            System.out.println("");
-            System.out.println("");
-            System.out.println("");
-            System.out.println("");
+            clear();
             game();
         }
+    }
+
+    public static void clear() {
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+    }
+
+    public static void name() {
+        System.out.println("What is your name?");
+        name = scan.nextLine();
     }
 }
