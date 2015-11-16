@@ -1,0 +1,9 @@
+No, really, How will you use methods in your game? Why?
+Be specific.
+What values will you pass to them?
+
+I have three methods: intro, rules, and game. Intro introduces you to the game. It also has a warning. Rules contains rules to help you get your
+syntax and thinking working well. And game has the actual content of the game. Since my game doesn't keep track of health, items, or anything like
+that, I don't have to pass values to them. My game is a straightfoward text-based adventure, and is simple. It doesn't have a lot of complex
+variables. It is basically a bunch of nested if statements. But hey, the simpler, the better. It is also a VERY hard game, so by the time you beat
+it I'll have moved on to CS AP anyway.
