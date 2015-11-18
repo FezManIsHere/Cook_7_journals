@@ -37,7 +37,7 @@ public class Cook_7_interactivefiction {
 
         System.out.println("You wake up in a strange room"); //first choice (scenario)
         answer = scan.nextLine().toLowerCase();
-        if (answer.contains("why does") & answer.contains("smell")) {
+        if (answer.contains("smell")) {
             System.out.println("You stand up"); //second choice
             answer = scan.nextLine().toLowerCase();
             if (answer.contains("turn on") & answer.contains("lights")) {
@@ -46,7 +46,7 @@ public class Cook_7_interactivefiction {
                 if (answer.contains("look")) {
                     System.out.println("You see a table, your bed, and a giant monster with his hands covering his eyes"); //fourth choice
                     answer = scan.nextLine().toLowerCase();
-                    if (answer.contains("hi")) {
+                    if (answer.equals("hi")) {
                         System.out.println("You say Hi to the monster, and he offers you breakfast"); //fifth choice
                         answer = scan.nextLine().toLowerCase();
                         if (answer.contains("eat")) {
@@ -61,15 +61,24 @@ public class Cook_7_interactivefiction {
                                     if (answer.contains("wait")) {
                                         System.out.println("You wait, and a boulder rolls past"); //ninth choice
                                         answer = scan.nextLine().toLowerCase();
-                                        if (answer.contains("walk") | answer.contains("forward")) {
-                                            System.out.println("Being cautious, you walk forware, right up to the door. It opens"); //tenth choice
+                                        if (answer.contains("walk") || answer.contains("forward")) {
+                                            System.out.println("Being cautious, you walk forward, right up to the door. It opens"); //tenth choice
                                             answer = scan.nextLine().toLowerCase();
                                             if (answer.contains("wait")) {
                                                 System.out.println("You wait for the unicyclist to come in before you step in front of the doorway. You are blinded by the bright light coming"
                                                         + " from outside"); //eleventh choice
                                                 answer = scan.nextLine().toLowerCase();
-                                                if (answer.contains("leave") | answer.contains("go") | answer.contains("forward")) {
-                                                    System.out.println("Walking out into the bright light, your vision ");
+                                                if (answer.contains("leave") | answer.contains("go") || answer.contains("forward")) {
+                                                    System.out.println("Walking out into the bright light, your vision adjusts. There is a bush maze to the left, and"
+                                                            + " a tall white fence to the right"); //twelfth choice
+                                                    answer = scan.nextLine().toLowerCase();
+                                                    if (answer.contains("left")) {
+                                                        
+                                                    } else if (answer.contains("right")) {
+                                                        
+                                                    } else { //bad choice (12)
+                                                        
+                                                    }
                                                 } else { //bad choice (11)
                                                     System.out.println("Waiting like a 'smart' person, you get picked up and thrown by the giant baby");
                                                     bad();
@@ -141,7 +150,7 @@ public class Cook_7_interactivefiction {
         name = scan.nextLine();
     }
 
-    public static void bad() {
+    public static void bad() { //to condense statements, requiring less room
         clear();
         game();
     }
