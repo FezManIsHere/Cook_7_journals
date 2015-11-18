@@ -65,7 +65,15 @@ public class Cook_7_interactivefiction {
                                             System.out.println("Being cautious, you walk forware, right up to the door. It opens"); //tenth choice
                                             answer = scan.nextLine().toLowerCase();
                                             if (answer.contains("wait")) {
-                                                
+                                                System.out.println("You wait for the unicyclist to come in before you step in front of the doorway. You are blinded by the bright light coming"
+                                                        + " from outside"); //eleventh choice
+                                                answer = scan.nextLine().toLowerCase();
+                                                if (answer.contains("leave") | answer.contains("go") | answer.contains("forward")) {
+                                                    System.out.println("Walking out into the bright light, your vision ");
+                                                } else { //bad choice (11)
+                                                    System.out.println("Waiting like a 'smart' person, you get picked up and thrown by the giant baby");
+                                                    bad();
+                                                }
                                             } else { //bad choice (10)
                                                 System.out.println("You should wait your turn next time. The motorcycle coming in hits you, hard");
                                                 bad();
