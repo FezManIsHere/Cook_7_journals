@@ -27,6 +27,7 @@ public class Cook_7_interactivefiction {
         name();
         playAgain = true;
         while (playAgain) {
+            playAgain = false;
             intro();
             rules();
             game();
@@ -68,16 +69,34 @@ public class Cook_7_interactivefiction {
                                                 System.out.println("You wait for the unicyclist to come in before you step in front of the doorway. You are blinded by the bright light coming"
                                                         + " from outside"); //eleventh choice
                                                 answer = scan.nextLine().toLowerCase();
-                                                if (answer.contains("leave") | answer.contains("go") || answer.contains("forward")) {
+                                                if (answer.contains("leave") || answer.contains("go") || answer.contains("forward")) {
                                                     System.out.println("Walking out into the bright light, your vision adjusts. There is a bush maze to the left, and"
                                                             + " a tall white fence to the right"); //twelfth choice
                                                     answer = scan.nextLine().toLowerCase();
                                                     if (answer.contains("left")) {
-                                                        
-                                                    } else if (answer.contains("right")) {
-                                                        
+                                                        System.out.println("Without delay, you head towards the maze. You THEN hesitate, but only briefly, "
+                                                                + "before heading into the darkness. You reach a crossroads, left and right"); //Choice 13a
+                                                        answer = scan.nextLine().toLowerCase();
+                                                        if (answer.contains("left")) {
+                                                            System.out.println("Taking the left fork, you keep going. You find two tunnels, one dark, one light"); //Choice 14a
+                                                            answer = scan.nextLine().toLowerCase();
+                                                            if(answer.contains("dark")) {
+                                                                System.out.println("As you go through the dark tunnel, there are bad smells. Turn back?");
+                                                                
+                                                            } else {
+                                                                System.out.println("You decide just to go down the light tunnel. At the end of it, there is a monster who is eating dinner."
+                                                                        + " \"Oh,\" he said, \"Desert...gooood\"");
+                                                            }
+                                                        } else {
+                                                            System.out.println("A snake jumps out of a bush and viciously attacks you");
+                                                        }
+                                                    } else if (answer.contains("right")) { //Losing ending choice (12)
+                                                        System.out.println("As you head toward the tall fence, a man tells you to stand down. Not understanding, you keep walking"
+                                                                + " towards him. He warns you again, and you run at him to stop him before he hurts someone. He guns you down, and you lose."
+                                                                + " The End.");
                                                     } else { //bad choice (12)
-                                                        
+                                                        System.out.println("Being the indecisve person you are, you stand there until you melt into a liquidy puddle");
+                                                        bad();
                                                     }
                                                 } else { //bad choice (11)
                                                     System.out.println("Waiting like a 'smart' person, you get picked up and thrown by the giant baby");
