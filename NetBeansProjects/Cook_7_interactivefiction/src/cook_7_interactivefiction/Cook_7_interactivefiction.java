@@ -62,14 +62,14 @@ public class Cook_7_interactivefiction {
                                     if (answer.contains("wait")) {
                                         System.out.println("You wait, and a boulder rolls past"); //ninth choice
                                         answer = scan.nextLine().toLowerCase();
-                                        if (answer.contains("walk") || answer.contains("forward")) {
+                                        if (answer.contains("walk") || answer.contains("forward") || answer.contains("go")) {
                                             System.out.println("Being cautious, you walk forward, right up to the door. It opens"); //tenth choice
                                             answer = scan.nextLine().toLowerCase();
                                             if (answer.contains("wait")) {
                                                 System.out.println("You wait for the unicyclist to come in before you step in front of the doorway. You are blinded by the bright light coming"
                                                         + " from outside"); //eleventh choice
                                                 answer = scan.nextLine().toLowerCase();
-                                                if (answer.contains("leave") || answer.contains("go") || answer.contains("forward")) {
+                                                if (answer.contains("leave") || answer.contains("go") || answer.contains("forward") || answer.contains("walk")) {
                                                     System.out.println("Walking out into the bright light, your vision adjusts. There is a bush maze to the left, and"
                                                             + " a tall white fence to the right"); //twelfth choice
                                                     answer = scan.nextLine().toLowerCase();
@@ -90,9 +90,9 @@ public class Cook_7_interactivefiction {
                                                                         System.out.println("You go on. Up ahead, there is a creepy goop. Turn back?"); //choice 17a
                                                                         answer = scan.nextLine().toLowerCase();
                                                                         if (answer.contains("yes") || answer.equals("y")) { //#forthewin
-                                                                            System.out.println("You go back, and see a spinoff tunnel, with a light at the end. You head on in, and walk for what feels "
-                                                                                    + "like miles, until you finally get out. You turn around and see a sign that says "
-                                                                                    + "\"Vermont State Mental Hospital\" You win. The End"); //The point when you realize that you are crazy #win
+                                                                            System.out.println("You go back, and see a spinoff tunnel, with a light at the end. You head on in, and walk for what feels");
+                                                                            System.out.println("like miles, until you finally get out. You turn around and see a sign that says");
+                                                                            System.out.println("\"Vermont State Mental Hospital\" You win. The End"); //The point when you realize that you are crazy #win
                                                                             ask();
                                                                         } else { //bad choice (17a)
                                                                             System.out.println("You keep going, straight into the giant slug's layer. His goop burns "
@@ -210,3 +210,5 @@ public class Cook_7_interactivefiction {
         }
     }
 }
+/*What makes my game original is the nested if loops. No, it actually has a really
+simple, but hard plot/style that infuriates players while having been fairly easy to code */
