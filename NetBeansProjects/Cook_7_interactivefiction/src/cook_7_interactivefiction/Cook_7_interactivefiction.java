@@ -41,7 +41,7 @@ public class Cook_7_interactivefiction {
         if (answer.contains("smell")) {
             System.out.println("You stand up"); //second choice
             answer = scan.nextLine().toLowerCase();
-            if (answer.contains("turn on") & answer.contains("lights")) {
+            if (answer.contains("turn on") & answer.contains("light")) {
                 System.out.println("You find a light switch and turn it on"); //third choice
                 answer = scan.nextLine().toLowerCase();
                 if (answer.contains("look")) {
