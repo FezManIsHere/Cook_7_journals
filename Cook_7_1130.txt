@@ -1,0 +1,4 @@
+How successful were you with your game? In what way? Be specific.
+I was very successful with my game. I surpassed the storyline I had previously created and actually added a lose scene. I also made greater uses of
+methods, and explained the weirdness of the game. I also managed to add another layer of mystery and allowed more commands to make my game much
+easier/lenient.
