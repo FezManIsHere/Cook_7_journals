@@ -400,7 +400,7 @@ public class Unwavering extends BasicGameState {
 		// System.out.println("Number of tile layers: "
 		// +grassMap.getLayerCount());
 
-		System.out.println("The grassmap is " + grassMap.getWidth() + "by "
+		System.out.println("The grassmap is " + grassMap.getWidth() + " by "
 				+ grassMap.getHeight());
 
 		for (int xAxis = 0; xAxis < grassMap.getWidth(); xAxis++) {
