@@ -401,6 +401,8 @@ public class Unwavering extends BasicGameState {
 			}
 		}
 		
+                stormy.currentImage.draw(stormy.x, stormy.y);
+                daniel.currentImage.draw(daniel.x, daniel.y);
 		
 		for (Item1 h : stuff1) {
 			if (h.isvisible) {
