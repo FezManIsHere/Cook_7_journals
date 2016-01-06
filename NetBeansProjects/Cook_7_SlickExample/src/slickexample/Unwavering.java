@@ -342,9 +342,16 @@ public class Unwavering extends BasicGameState {
 
 		healthpotion = new Item(100, 100);
 		healthpotion1 = new Item(450, 400);
-		stuff.add(healthpotion);
+		
+                stormy = new Ninja(0, 0);
+                daniel = new Ninja(124, 254);
+                
+                stuff.add(healthpotion);
 		stuff.add(healthpotion1);
 		
+                dojo.add(stormy);
+                dojo.add(daniel);
+                
 		speedpotion = new Item1(100,150);
 		speedpotion1 = new Item1(450,100);	
 		stuff1.add(speedpotion);
