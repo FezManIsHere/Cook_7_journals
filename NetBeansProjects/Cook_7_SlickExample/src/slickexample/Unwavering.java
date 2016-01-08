@@ -59,6 +59,7 @@ public class Unwavering extends BasicGameState {
         
         
         public Ninja stormy, daniel;
+        public Enemy flava, flav;
         
         
 	public ArrayList<Item> stuff = new ArrayList();
@@ -69,6 +70,9 @@ public class Unwavering extends BasicGameState {
 
         
         public ArrayList<Ninja> dojo = new ArrayList();
+        
+        
+        public ArrayList<Enemy> bonez = new ArrayList();
         
         
 	private boolean[][] hostiles;
@@ -346,11 +350,17 @@ public class Unwavering extends BasicGameState {
                 stormy = new Ninja(0, 0);
                 daniel = new Ninja(124, 254);
                 
+                flava = new Enemy(300, 300);
+                flav = new Enemy(256, 256);
+                
                 stuff.add(healthpotion);
 		stuff.add(healthpotion1);
 		
                 dojo.add(stormy);
                 dojo.add(daniel);
+                
+                bonez.add(flava);
+                bonez.add(flav);
                 
 		speedpotion = new Item1(100,150);
 		speedpotion1 = new Item1(450,100);	
@@ -405,6 +415,14 @@ public class Unwavering extends BasicGameState {
 				n.currentImage.draw(n.x, n.y);
 				// draw the hitbox
 				g.draw(n.hitbox);
+
+			}
+		}
+                for (Enemy e : bonez) {
+			if (e.isAlive) {
+				e.currentanime.draw(e.Bx, e.By);
+				// draw the hitbox
+				//g.draw(e.hitbox);
 
 			}
 		}
