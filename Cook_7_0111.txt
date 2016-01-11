@@ -1,0 +1,5 @@
+What slick game will you create?
+I will create a game in which you must navigate through a maze to find an object to return to a village.
+
+What challenges have you faced / are you facing with your slick game?
+I will need to come up with a way to lose, maybe an enemy or a timer to return an atifact before the village gets destroyed.
