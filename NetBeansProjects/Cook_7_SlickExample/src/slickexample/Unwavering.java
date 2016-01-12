@@ -61,6 +61,7 @@ public class Unwavering extends BasicGameState {
         public Ninja stormy, daniel;
         public Enemy flava, flav;
         
+        //public Statue artifact;
         
 	public ArrayList<Item> stuff = new ArrayList();
 
@@ -73,6 +74,8 @@ public class Unwavering extends BasicGameState {
         
         
         public ArrayList<Enemy> bonez = new ArrayList();
+        
+        //public ArrayList<Statue> winning = new ArrayList();
         
         
 	private boolean[][] hostiles;
@@ -98,7 +101,7 @@ public class Unwavering extends BasicGameState {
 
 	// changed to match size of sprites & map
 
-	private static final int SIZE = 64;
+	private static final int SIZE = 32;
 
 	// screen width and height won't change
 
@@ -124,7 +127,7 @@ public class Unwavering extends BasicGameState {
 
 		// ****************
 
-		grassMap = new TiledMap("res/d4.tmx");
+		grassMap = new TiledMap("../../dungeon/anewhope.tmx");
 
 		// Ongoing checks are useful
 
@@ -140,7 +143,7 @@ public class Unwavering extends BasicGameState {
 		// *********************************************************************************
 
 		SpriteSheet runningSS = new SpriteSheet(
-				"res/ogrespritesheet.png",64, 64, 0);
+				"res/MageOP.png",64, 64, 0);
 
 		// System.out.println("Horizontal count: "
 		// +runningSS.getHorizontalCount());
@@ -352,6 +355,8 @@ public class Unwavering extends BasicGameState {
                 
                 flava = new Enemy(300, 300);
                 flav = new Enemy(256, 256);
+                
+                //artifact = new Statue(100, 100);
                 
                 stuff.add(healthpotion);
 		stuff.add(healthpotion1);
