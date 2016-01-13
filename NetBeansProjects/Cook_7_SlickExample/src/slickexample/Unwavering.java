@@ -53,19 +53,19 @@ import org.w3c.dom.css.Rect;
 public class Unwavering extends BasicGameState {
 
 	
-	public Item healthpotion, healthpotion1;
-	public Item1 speedpotion, speedpotion1;
+	//public Item healthpotion, healthpotion1;
+	//public Item1 speedpotion, speedpotion1;
 	public Itemwin antidote;
         
         
         public Ninja stormy, daniel;
         public Enemy flava, flav;
         
-        //public Statue artifact;
+        public Statue artifact;
         
-	public ArrayList<Item> stuff = new ArrayList();
+	//public ArrayList<Item> stuff = new ArrayList();
 
-	public ArrayList<Item1> stuff1 = new ArrayList();
+	//public ArrayList<Item1> stuff1 = new ArrayList();
 	
 	public ArrayList<Itemwin> stuffwin = new ArrayList();
 
@@ -75,7 +75,7 @@ public class Unwavering extends BasicGameState {
         
         public ArrayList<Enemy> bonez = new ArrayList();
         
-        //public ArrayList<Statue> winning = new ArrayList();
+        public ArrayList<Statue> winning = new ArrayList();
         
         
 	private boolean[][] hostiles;
@@ -317,7 +317,7 @@ public class Unwavering extends BasicGameState {
 
 		hostiles = new boolean[grassMap.getWidth()][grassMap.getHeight()];
 
-		for (int xAxis = 0; xAxis < grassMap.getWidth(); xAxis++) {
+		/*for (int xAxis = 0; xAxis < grassMap.getWidth(); xAxis++) {
 			for (int yAxis = 0; yAxis < grassMap.getHeight(); yAxis++) {
 				int xBlock = (int) xAxis;
 				int yBlock = (int) yAxis;
@@ -330,9 +330,9 @@ public class Unwavering extends BasicGameState {
 					}
 				}
 			}
-		}
+		}*/
 		
-		for (int xAxis = 0; xAxis < grassMap.getWidth(); xAxis++) {
+		/*for (int xAxis = 0; xAxis < grassMap.getWidth(); xAxis++) {
 			for (int yAxis = 0; yAxis < grassMap.getHeight(); yAxis++) {
 				int xBlock = (int) xAxis;
 				int yBlock = (int) yAxis;
@@ -345,35 +345,37 @@ public class Unwavering extends BasicGameState {
 					}
 				}
 			}
-		}
+		}*/
 
-		healthpotion = new Item(100, 100);
-		healthpotion1 = new Item(450, 400);
+		//healthpotion = new Item(100, 100);
+		//healthpotion1 = new Item(450, 400);
 		
-                stormy = new Ninja(0, 0);
-                daniel = new Ninja(124, 254);
+                //stormy = new Ninja(0, 0);
+                //daniel = new Ninja(124, 254);
                 
                 flava = new Enemy(300, 300);
                 flav = new Enemy(256, 256);
                 
-                //artifact = new Statue(100, 100);
+                artifact = new Statue(3007, 92);
                 
-                stuff.add(healthpotion);
-		stuff.add(healthpotion1);
+                //stuff.add(healthpotion);
+		//stuff.add(healthpotion1);
 		
-                dojo.add(stormy);
-                dojo.add(daniel);
+                //dojo.add(stormy);
+                //dojo.add(daniel);
                 
                 bonez.add(flava);
                 bonez.add(flav);
                 
-		speedpotion = new Item1(100,150);
-		speedpotion1 = new Item1(450,100);	
-		stuff1.add(speedpotion);
-		stuff1.add(speedpotion1);
+                winning.add(artifact);
+                
+		//speedpotion = new Item1(100,150);
+		//speedpotion1 = new Item1(450,100);	
+		//stuff1.add(speedpotion);
+		//stuff1.add(speedpotion1);
 		
-		antidote = new Itemwin(3004,92);
-		stuffwin.add(antidote);
+		//antidote = new Itemwin(3004,92);
+		//stuffwin.add(antidote);
 	}
 
 	public void render(GameContainer gc, StateBasedGame sbg, Graphics g)
@@ -396,61 +398,69 @@ public class Unwavering extends BasicGameState {
 		
 		//g.drawString("x: " + (int)player.x + "y: " +(int)player.y , player.x, player.y - 10);
 
-		g.drawString("Health: " + Player.health/1000, camera.cameraX + 10,
+		g.drawString("Time Left: " + Player.health/1000, camera.cameraX + 10,
 				camera.cameraY + 10);
 		
-		g.drawString("speed: " + (int)(Player.speed *10), camera.cameraX + 10,
-				camera.cameraY + 25);
+//		g.drawString("speed: " + (int)(Player.speed *10), camera.cameraX + 10,
+//				camera.cameraY + 25);
 
 		//g.draw(player.rect);
 
-		g.drawString("time passed: " +counter/1000, camera.cameraX +600,camera.cameraY );
+		//g.drawString("time passed: " +counter/1000, camera.cameraX +600,camera.cameraY );
 		// moveenemies();
 
-		for (Item i : stuff) {
-			if (i.isvisible) {
-				i.currentImage.draw(i.x, i.y);
-				// draw the hitbox
-				//g.draw(i.hitbox);
-
-			}
-		}
-		for (Ninja n : dojo) {
-			if (n.isvisible) {
-				n.currentImage.draw(n.x, n.y);
-				// draw the hitbox
-				g.draw(n.hitbox);
-
-			}
-		}
-                for (Enemy e : bonez) {
-			if (e.isAlive) {
-				e.currentanime.draw(e.Bx, e.By);
-				// draw the hitbox
-				//g.draw(e.hitbox);
-
-			}
-		}
+//		for (Item i : stuff) {
+//			if (i.isvisible) {
+//				i.currentImage.draw(i.x, i.y);
+//				// draw the hitbox
+//				//g.draw(i.hitbox);
+//
+//			}
+//		}
+//		for (Ninja n : dojo) {
+//			if (n.isvisible) {
+//				n.currentImage.draw(n.x, n.y);
+//				// draw the hitbox
+//				g.draw(n.hitbox);
+//
+//			}
+//		}
+//                for (Enemy e : bonez) {
+//			if (e.isAlive) {
+//				e.currentanime.draw(e.Bx, e.By);
+//				// draw the hitbox
+//				//g.draw(e.hitbox);
+//
+//			}
+//		}
                 //stormy.currentImage.draw(stormy.x, stormy.y);
                 //daniel.currentImage.draw(daniel.x, daniel.y);
 		
-		for (Item1 h : stuff1) {
-			if (h.isvisible) {
-				h.currentImage.draw(h.x, h.y);
-				// draw the hitbox
-				//g.draw(h.hitbox);
-
-			}
-		}
+//		for (Item1 h : stuff1) {
+//			if (h.isvisible) {
+//				h.currentImage.draw(h.x, h.y);
+//				// draw the hitbox
+//				//g.draw(h.hitbox);
+//
+//			}
+//		}
 		
-		for (Itemwin w: stuffwin) {
-			if (w.isvisible) {
-				w.currentImage.draw(w.x, w.y);
+		for (Statue s: winning) {
+			if (s.isvisible) {
+				s.currentImage.draw(s.x, s.y);
 				// draw the hitbox
 				//g.draw(w.hitbox);
 
 			}
 		}
+//                for (Itemwin w: stuffwin) {
+//			if (w.isvisible) {
+//				w.currentImage.draw(w.x, w.y);
+//				// draw the hitbox
+//				//g.draw(w.hitbox);
+//
+//			}
+//		}
 
 	}
 
@@ -496,9 +506,9 @@ public class Unwavering extends BasicGameState {
 
 			sprite = down;
 
-			if (!isBlocked(Player.x, Player.y + SIZE + fdelta)
+			if (!isBlocked(Player.x, Player.y + SIZE*2 + fdelta)
 
-			|| !isBlocked(Player.x + SIZE - 1, Player.y + SIZE + fdelta)) {
+			|| !isBlocked(Player.x + SIZE - 1, Player.y + SIZE*2 + fdelta)) {
 
 				sprite.update(delta);
 
@@ -544,52 +554,65 @@ public class Unwavering extends BasicGameState {
 		Player.rect.setLocation(Player.getplayershitboxX(),
 				Player.getplayershitboxY());
 
-		for (Item i : stuff) {
-
-			if (Player.rect.intersects(i.hitbox)) {
-				//System.out.println("yay");
-				if (i.isvisible) {
-
-					Player.health += 10000;
-					i.isvisible = false;
-				}
-
-			}
-		}
+//		for (Item i : stuff) {
+//
+//			if (Player.rect.intersects(i.hitbox)) {
+//				//System.out.println("yay");
+//				if (i.isvisible) {
+//
+//					Player.health += 10000;
+//					i.isvisible = false;
+//				}
+//
+//			}
+//		}
 		
-                for (Ninja n : dojo) {
-
-			if (Player.rect.intersects(n.hitbox)) {
-				//System.out.println("yay");
-				if (n.isvisible) {
-
-					Player.health += 9;
-					Player.speed += .1f;
-                                        n.isvisible = false;
-				}
-
-			}
-		}
+//                for (Ninja n : dojo) {
+//
+//			if (Player.rect.intersects(n.hitbox)) {
+//				//System.out.println("yay");
+//				if (n.isvisible) {
+//
+//					Player.health += 9;
+//					Player.speed += .1f;
+//                                        n.isvisible = false;
+//				}
+//
+//			}
+//		}
                 
-		for (Item1 h : stuff1) {
-
-			if (Player.rect.intersects(h.hitbox)) {
-				//System.out.println("yay");
-				if (h.isvisible) {
-
-					Player.speed += .1f;
-					h.isvisible = false;
-				}
-
-			}
-		}
+//		for (Item1 h : stuff1) {
+//
+//			if (Player.rect.intersects(h.hitbox)) {
+//				//System.out.println("yay");
+//				if (h.isvisible) {
+//
+//					Player.speed += .1f;
+//					h.isvisible = false;
+//				}
+//
+//			}
+//		}
 		
-		for (Itemwin w : stuffwin) {
+//		for (Itemwin w : stuffwin) {
+//
+//			if (Player.rect.intersects(w.hitbox)) {
+//				//System.out.println("yay");
+//				if (w.isvisible) {
+//					w.isvisible = false;
+//					makevisible();
+//					sbg.enterState(3, new FadeOutTransition(Color.black), new FadeInTransition(Color.black));
+//					
+//				}
+//
+//			}
+//		}
+                for (Statue s : winning) {
 
-			if (Player.rect.intersects(w.hitbox)) {
+			if (Player.rect.intersects(s.hitbox)) {
 				//System.out.println("yay");
-				if (w.isvisible) {
-					w.isvisible = false;
+				if (s.isvisible) {
+					s.isvisible = false;
 					makevisible();
 					sbg.enterState(3, new FadeOutTransition(Color.black), new FadeInTransition(Color.black));
 					
@@ -613,13 +636,13 @@ public class Unwavering extends BasicGameState {
 	}
 
 	public void makevisible(){
-		for (Item1 h : stuff1) {
-			
-		h.isvisible = true;}
+//		for (Item1 h : stuff1) {
+//			
+//		h.isvisible = true;}
 		
-		for (Item i : stuff) {
-			
-			i.isvisible = true;}
+//		for (Item i : stuff) {
+//			
+//			i.isvisible = true;}
 		}
 	
 	private boolean isBlocked(float tx, float ty) {

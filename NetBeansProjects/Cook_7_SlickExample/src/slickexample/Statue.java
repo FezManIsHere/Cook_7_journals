@@ -15,19 +15,18 @@ import org.newdawn.slick.geom.Shape;
  * @author Ramborux
  */
 public class Statue {
-    public int x;
+        public int x;
 	public int y;
-	public boolean isvisible = true;
+	public static boolean isvisible = true;
 	Image currentImage;
 	Shape hitbox;
-	Image statue = new Image(
-			"res/health_Statue.png");
+	Image artifact = new Image("res/Statue.png");
 
 	Statue(int a, int b) throws SlickException {
 		this.x = a;
 		this.y = b;
 		this.hitbox = new Rectangle(a, b, 32, 32);// 64 is the width of the item
-		this.currentImage = statue;
+		this.currentImage = artifact;
 
 	}
 }
