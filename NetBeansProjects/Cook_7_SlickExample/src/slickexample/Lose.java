@@ -60,7 +60,7 @@ public class Lose extends BasicGameState {
 
 
             throws SlickException {
-    	startimage = new Image("res/LossScreen.png");
+    	startimage = new Image("res/losss.png");
 
 
         this.game = game;
@@ -93,7 +93,7 @@ public class Lose extends BasicGameState {
 
 
         //g.drawString("You LOSE!", 450, 200);
-        g.drawString("press 1 to try again", 400, 320);
+        //g.drawString("press 1 to try again", 400, 320);
 
 
        

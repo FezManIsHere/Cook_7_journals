@@ -356,7 +356,7 @@ public class Unwavering extends BasicGameState {
                 flava = new Enemy(300, 300);
                 flav = new Enemy(256, 256);
                 
-                artifact = new Statue(3007, 92);
+                artifact = new Statue(3070, 75);
                 
                 //stuff.add(healthpotion);
 		//stuff.add(healthpotion1);

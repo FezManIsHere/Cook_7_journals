@@ -92,7 +92,7 @@ public class Win extends BasicGameState {
         g.setColor(Color.white);
 
 
-        g.drawString("You found the antidote in time!", 380, 200);
+        g.drawString("You found the statue in time and saved the village!", 380, 200);
         g.drawString("press 1 to play again", 400, 320);
 
 

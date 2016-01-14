@@ -61,7 +61,7 @@ public class Menu extends BasicGameState {
 
             throws SlickException {
     	
-    	startimage = new Image("res/Lorelei.png");
+    	startimage = new Image("res/Untitled.png");
 
 
         this.game = game;
