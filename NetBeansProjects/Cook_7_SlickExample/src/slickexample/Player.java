@@ -16,9 +16,9 @@ import org.newdawn.slick.geom.Shape;
  * @author Ramborux
  */
 public class Player {
-        public static float x = 96f;
+        public static float x = 35f;
 
-	public static float y = 228f;
+	public static float y = 34f;
 
 	public static int health = 600000;
 	

@@ -276,7 +276,7 @@ public class Unwavering extends BasicGameState {
 		// System.out.println("Number of tile layers: "
 		// +grassMap.getLayerCount());
 
-		System.out.println("The grassmap is " + grassMap.getWidth() + "by "
+		System.out.println("The grassmap is " + grassMap.getWidth() + " by "
 				+ grassMap.getHeight());
 
 		for (int xAxis = 0; xAxis < grassMap.getWidth(); xAxis++) {
@@ -300,8 +300,8 @@ public class Unwavering extends BasicGameState {
 
 				if ("true".equals(value)) {
 
-					System.out.println("The tile at x " + xAxis + " andy axis "
-							+ yAxis + " is blocked.");
+					//System.out.println("The tile at x " + xAxis + " and y axis "
+					//		+ yAxis + " is blocked.");
 
 					Blocked.blocked[xAxis][yAxis] = true;
 
@@ -311,7 +311,7 @@ public class Unwavering extends BasicGameState {
 
 		}
 
-		System.out.println("Array length" + Blocked.blocked[0].length);
+		System.out.println("Array length " + Blocked.blocked[0].length);
 
 		// A remarkably similar process for finding hostiles
 
@@ -392,11 +392,11 @@ public class Unwavering extends BasicGameState {
 
 		// but it gets old quickly
 
-		// System.out.println("Current X: " +player.x + " \n Current Y: "+ y);
+		//System.out.println("Current X: " +Player.x + " \n Current Y: "+ Player.y);
 
 		sprite.draw((int) Player.x, (int) Player.y);
 		
-		//g.drawString("x: " + (int)player.x + "y: " +(int)player.y , player.x, player.y - 10);
+		//g.drawString("x: " + (int)Player.x + "y: " +(int)Player.y , Player.x, Player.y - 10);
 
 		g.drawString("Time Left: " + Player.health/1000, camera.cameraX + 10,
 				camera.cameraY + 10);

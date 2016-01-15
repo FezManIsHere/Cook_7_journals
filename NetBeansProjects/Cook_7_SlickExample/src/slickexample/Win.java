@@ -92,7 +92,7 @@ public class Win extends BasicGameState {
         g.setColor(Color.white);
 
 
-        g.drawString("You found the statue in time and saved the village!", 380, 200);
+        g.drawString("You found the statue in time and saved the village!", 275, 200);
         g.drawString("press 1 to play again", 400, 320);
 
 
@@ -146,16 +146,17 @@ public class Win extends BasicGameState {
 
             case Input.KEY_1:
 
-                Player.health  = 100000;
+                Player.health  = 600000;
                 Player.speed = .4f;
                 Unwavering.counter = 0;
-                Player.x = 96f;
-                Player.y = 228f;
+                Player.x = 35f;
+                Player.y = 34f;
                 
                 
                 //item.isvisible = true;
                 //item1.isvisible = true;
-                Itemwin.isvisible = true;
+                //Itemwin.isvisible = true;
+                Statue.isvisible = true;
                 game.enterState(1, new FadeOutTransition(Color.black), new FadeInTransition(Color.black));
 
 

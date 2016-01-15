@@ -11,7 +11,7 @@ public class Main extends StateBasedGame{
 
    
 
-   public static final String gamename = "Unwavering";
+   public static final String gamename = "Appease the Gods or Else...";
 
    public static final int play = 0;
 
