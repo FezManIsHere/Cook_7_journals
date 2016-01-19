@@ -1,0 +1,14 @@
+What slick game did you create?
+I created a game that runs on a time limit, that has a very unique backstory.
+
+What challenges did you solve?
+The challenges involving broken blocked properties on tiled maps.
+
+Before the Winter break, you were admonished to finish your maps and spritesheets - so that you would be ready to go with the game when we got back.
+Did you? Why or why not?
+No, because there was just so much that I could add...I hadn't finished going through the mental process that was designing my map.
+
+Were you able to meet the timeline? Why or why not?
+More or less...my game wasn't at all following the day-to-day plan, but by Friday I was able to produce a fairly functunal game. My slowness related
+to finishing the main part and adding more touches, fixes, etc. is most highly attributable to my having to take more time to finish the tiled map/
+sprite sheets. Other than that my game pretty much met the requirements, in my opinion.
