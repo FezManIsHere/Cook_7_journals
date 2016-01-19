@@ -148,7 +148,7 @@ public class Lose extends BasicGameState {
 
                 Player.health  = 600000;
                 Player.speed = .4f;
-                Unwavering.counter = 0;
+                AGE.counter = 0;
                 //Itemwin.isvisible = true;
                 Statue.isvisible = true;
                 Player.x = 35f;

@@ -50,7 +50,7 @@ import org.w3c.dom.css.Rect;
 
 
 
-public class Unwavering extends BasicGameState {
+public class AGE extends BasicGameState {
 
 	
 	//public Item healthpotion, healthpotion1;
@@ -109,7 +109,7 @@ public class Unwavering extends BasicGameState {
 
 	private static final int SCREEN_HEIGHT = 750;
 
-	public Unwavering(int xSize, int ySize) {
+	public AGE(int xSize, int ySize) {
 
 	}
 
@@ -508,7 +508,7 @@ public class Unwavering extends BasicGameState {
 
 			if (!isBlocked(Player.x, Player.y + SIZE*2 + fdelta)
 
-			|| !isBlocked(Player.x + SIZE - 1, Player.y + SIZE*2 + fdelta)) {
+			&& !isBlocked(Player.x + SIZE - 1, Player.y + SIZE*2 + fdelta)) {
 
 				sprite.update(delta);
 
@@ -522,7 +522,7 @@ public class Unwavering extends BasicGameState {
 
 			if (!(isBlocked(Player.x - fdelta, Player.y) || isBlocked(Player.x
 
-			- fdelta, Player.y + SIZE - 1))) {
+			- fdelta, Player.y + SIZE/2 - 1))) {
 
 				sprite.update(delta);
 

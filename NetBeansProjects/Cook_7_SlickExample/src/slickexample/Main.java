@@ -27,7 +27,7 @@ public class Main extends StateBasedGame{
 
       this.addState(new Menu(xSize, ySize));
 
-      this.addState(new Unwavering(xSize, ySize));
+      this.addState(new AGE(xSize, ySize));
       
       this.addState(new Lose(xSize, ySize));
       

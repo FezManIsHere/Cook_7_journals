@@ -148,7 +148,7 @@ public class Win extends BasicGameState {
 
                 Player.health  = 600000;
                 Player.speed = .4f;
-                Unwavering.counter = 0;
+                AGE.counter = 0;
                 Player.x = 35f;
                 Player.y = 34f;
                 
