@@ -16,6 +16,7 @@ import org.newdawn.slick.GameContainer;
 
 
 import org.newdawn.slick.Graphics;
+import org.newdawn.slick.Image;
 
 
 import org.newdawn.slick.Input;
@@ -44,6 +45,7 @@ public class Win extends BasicGameState {
 
 
     private StateBasedGame game;
+    public Image startimage;
 
 
     
@@ -64,6 +66,7 @@ public class Win extends BasicGameState {
 
 
             throws SlickException {
+    	startimage = new Image("res/win.png");
 
 
         this.game = game;
@@ -89,11 +92,11 @@ public class Win extends BasicGameState {
 // TODO AutoÃ¢â‚¬Âgenerated method stub
 
 
-        g.setColor(Color.white);
-
-
-        g.drawString("You found the statue in time and saved the village!", 275, 200);
-        g.drawString("press 1 to play again", 400, 320);
+            g.setColor(Color.white);
+//
+          startimage.draw();
+//        g.drawString("You found the statue in time and saved the village!", 275, 200);
+//        g.drawString("press 1 to play again", 400, 320);
 
 
        

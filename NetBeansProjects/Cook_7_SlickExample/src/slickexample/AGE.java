@@ -522,7 +522,7 @@ public class AGE extends BasicGameState {
 
 			if (!(isBlocked(Player.x - fdelta, Player.y) || isBlocked(Player.x
 
-			- fdelta, Player.y + SIZE/2 - 1))) {
+			- fdelta, Player.y + SIZE - 1))) {
 
 				sprite.update(delta);
 
