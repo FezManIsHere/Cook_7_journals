@@ -149,7 +149,7 @@ public class Win extends BasicGameState {
 
             case Input.KEY_1:
 
-                Player.health  = 600000;
+                Player.health  = 90000;
                 Player.speed = .4f;
                 AGE.counter = 0;
                 Player.x = 35f;
