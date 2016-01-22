@@ -1,0 +1,8 @@
+Briefly describe what you did or did not do that allowed or prevented the timely completion of your game. [Consider the posted timeline,
+whether you met that timeline, and if you were not meeting that timeline when and whether you worked on the project outside of class]
+
+I did finish my game. To be honest, I kind of disregarded the given timeline in terms of day-to-day activities, and did what needed completion
+as it needed it. My working game was finished by last Friday, but this week I have been polishing up the difficulty. A large hindrance in my
+completion was simply not being familiar enough with the elements in the game, which prevented me from just dishing out code for what I wanted. I
+fortunately was able to do all of my project in class, so I wasn't rushed too too much, however there definitely were hiccups along the road of
+completion.
