@@ -1,4 +1,4 @@
-package slickexample;
+package slickadventure;
 
 
 import org.newdawn.slick.*;

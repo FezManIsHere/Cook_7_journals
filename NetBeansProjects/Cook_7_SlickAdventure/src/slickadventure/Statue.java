@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package slickexample;
+package slickadventure;
 
 import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
@@ -14,22 +14,19 @@ import org.newdawn.slick.geom.Shape;
  *
  * @author Ramborux
  */
-public class Item {
-
-	public int x;
+public class Statue {
+        public int x;
 	public int y;
-	public boolean isvisible = true;
+	public static boolean isvisible = true;
 	Image currentImage;
 	Shape hitbox;
-	Image healthpotion = new Image(
-			"res/health_potion.png");
+	Image artifact = new Image("res/Statue.png");
 
-	Item(int a, int b) throws SlickException {
+	Statue(int a, int b) throws SlickException {
 		this.x = a;
 		this.y = b;
 		this.hitbox = new Rectangle(a, b, 32, 32);// 64 is the width of the item
-		this.currentImage = healthpotion;
+		this.currentImage = artifact;
 
 	}
-
 }

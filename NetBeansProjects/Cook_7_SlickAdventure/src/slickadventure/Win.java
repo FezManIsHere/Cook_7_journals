@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package slickexample;
+package slickadventure;
 
 
 import org.newdawn.slick.Color;
