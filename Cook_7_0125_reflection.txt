@@ -1,0 +1,12 @@
+Briefly describe what you could have done to successfully complete your game?
+I did complete it...I managed to rush the compiling and uploading bit at the end of class on Friday and finish. To have finished earlier, I could have
+figured out how to get the slick libraries working at home.
+
+Describe your problem solving / trouble shooting process.
+1. Read the errors
+2. Decipher the errors
+3. Ask Xiangyu if still can't work it out
+4. If Xiangyu doesn't know, google it
+5. If Google is being uncooperative, ask Daniel
+6. If Daniel is busy or can't help, ask Mr. Davis
+7. If he is busy or can't help, remove the bit I was experimenting with and move on
