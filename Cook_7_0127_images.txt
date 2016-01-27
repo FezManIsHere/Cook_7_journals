@@ -1,0 +1,6 @@
+How do you add an image to a slick game?
+You add an image by calling the instance that you set from the Image class and pass it an image file.
+
+Where is the image drawn? [What code? Be specific.] 
+The image is drawn from given coordinates starting at the top left. In the code they are found when you draw them using their method, which has been
+set when you initialize them. The code looks something like imagetype = new Image("res/imagename.extension")
