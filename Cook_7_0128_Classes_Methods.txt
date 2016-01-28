@@ -1,0 +1,8 @@
+What is this?:
+public void render(GameContainer gc, StateBasedGame sbg, Graphics g)
+throws SlickException {
+
+It is a piece of code called render, that is responsible for drawing the graphics in your state-based game inside the gamecontainer.
+
+Is it a class or method? How do you know?
+It is a method. I know because it starts with public void, which classes do not ever start with.
