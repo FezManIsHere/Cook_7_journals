@@ -1,0 +1,8 @@
+What is a class constructor?
+A method that instantiates the classs into objects.
+
+What should be included in a class constructor for orbs? Why?
+An x and y value, so they can be placed somewhere other than the top left corner.
+
+What methods should the orb have? why?
+Methods related to dissapearing when hitboces collide and damaging enmies, so that enemies can actually be affected.
