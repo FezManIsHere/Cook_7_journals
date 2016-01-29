@@ -60,23 +60,19 @@ public class AGE extends BasicGameState {
         
         public Ninja stormy, daniel;
         public Enemy flava, flav;
-        
         public Statue artifact;
         
+        public Orb magic8ball;
+        //public Orb the bestOrbEver
 	//public ArrayList<Item> stuff = new ArrayList();
 
 	//public ArrayList<Item1> stuff1 = new ArrayList();
 	
 	public ArrayList<Itemwin> stuffwin = new ArrayList();
-
-        
         public ArrayList<Ninja> dojo = new ArrayList();
-        
-        
         public ArrayList<Enemy> bonez = new ArrayList();
-        
         public ArrayList<Statue> winning = new ArrayList();
-        
+       
         
 	private boolean[][] hostiles;
 
@@ -355,9 +351,9 @@ public class AGE extends BasicGameState {
                 
                 flava = new Enemy(300, 300);
                 flav = new Enemy(256, 256);
-                
                 artifact = new Statue(3070, 75);
                 
+                magic8ball = new Orb((int) Player.x + 5, (int) Player.y + 5);
                 //stuff.add(healthpotion);
 		//stuff.add(healthpotion1);
 		
@@ -366,8 +362,8 @@ public class AGE extends BasicGameState {
                 
                 bonez.add(flava);
                 bonez.add(flav);
-                
                 winning.add(artifact);
+                
                 
 		//speedpotion = new Item1(100,150);
 		//speedpotion1 = new Item1(450,100);	
@@ -453,6 +449,9 @@ public class AGE extends BasicGameState {
 
 			}
 		}
+                if (magic8ball.isIsVisible()) {
+                    magic8ball.orbpic.draw(magic8ball.getX(), magic8ball.getY());
+                }
 //                for (Itemwin w: stuffwin) {
 //			if (w.isvisible) {
 //				w.currentImage.draw(w.x, w.y);
@@ -531,25 +530,20 @@ public class AGE extends BasicGameState {
 			}
 
 		} else if (input.isKeyDown(Input.KEY_RIGHT)) {
-
 			sprite = right;
-
 			// the boolean-kludge-implementation
-
 			if (cangoright
 					&& (!(isBlocked(Player.x + SIZE + fdelta,
-
 					Player.y) || isBlocked(Player.x + SIZE + fdelta, Player.y
 							+ SIZE - 1)))) {
-
 				sprite.update(delta);
-
 				Player.x += fdelta;
-
 			} // else { System.out.println("Right limit reached: " +
 				// rightlimit);}
-
-		}
+		} else if (input.isKeyDown(Input.KEY_SPACE)) {
+                    magic8ball.setIsVisible(true);
+                    
+                }
 
 		Player.rect.setLocation(Player.getplayershitboxX(),
 				Player.getplayershitboxY());
