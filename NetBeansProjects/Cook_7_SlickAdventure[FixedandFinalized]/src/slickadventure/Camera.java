@@ -2,104 +2,43 @@ package slickadventure;
 
 
 import org.newdawn.slick.GameContainer;
-
 import org.newdawn.slick.geom.Shape;
-
 import org.newdawn.slick.tiled.TiledMap;
 
-
 public class Camera {
-
-
    /** the map used for our scene */
-
    protected TiledMap map;
-
-  
-
    /** the number of tiles in x-direction (width) */
-
    protected int numTilesX;
-
-  
-
    /** the number of tiles in y-direction (height) */
-
    protected int numTilesY;
-
-  
-
    /** the height of the map in pixel */
-
    protected int mapHeight;
-
-  
-
    /** the width of the map in pixel */
-
    protected int mapWidth;
-
-  
-
    /** the width of one tile of the map in pixel */
-
    protected int tileWidth;
-
-  
-
    /** the height of one tile of the map in pixel */
-
    protected int tileHeight;
-
-  
-
    /** the GameContainer, used for getting the size of the GameCanvas */
-
    protected GameContainer gc;
-
-
    /** the x-position of our "camera" in pixel */
-
    protected float cameraX;
-
-  
-
    /** the y-position of our "camera" in pixel */
-
    protected float cameraY;
-
-  
-
    /**
-
     * Create a new camera
-
     *
-
     * @param gc the GameContainer, used for getting the size of the
-
 GameCanvas
-
     * @param map the TiledMap used for the current scene
-
     */
-
    public Camera(GameContainer gc, TiledMap map) {
-
       this.map = map;
-
-     
-
       this.numTilesX = map.getWidth();
-
       this.numTilesY = map.getHeight();
-
-     
-
       this.tileWidth = map.getTileWidth();
-
       this.tileHeight = map.getTileHeight();
-
      
 
       this.mapHeight = this.numTilesX * this.tileWidth;
