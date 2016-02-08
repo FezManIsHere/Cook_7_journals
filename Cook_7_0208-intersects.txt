@@ -1,0 +1,7 @@
+How would one check to see whether weapons damage enemies or objects in Slick?
+You would use code to check if the hitboxes intersected.
+for (Enemy e: dudes) {
+    if (magic8ball.hitbox.intersects(e.rect)) {
+        e.isVisible = false;
+    }
+}
