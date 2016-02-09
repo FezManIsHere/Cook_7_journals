@@ -1,0 +1,18 @@
+How can / will you make the orb move in the direction you are facing?
+Explain and provide specific code.
+I will do it using the examble code given on the journal page for my main code (not class main, but the old unwavering class) and then add in
+more to move the orb depending on the direction of the player when the orb is launched.
+Something like:
+if (playerguy.sprite == playerguy.right) {
+   magic8ball.xmove = 10;
+   magic8ball.ymove = 0;
+} else if (playerguy.sprite == playerguy.left) {
+   magic8ball.xmove = -10;
+   magic8ball.ymove = 0;
+} else if (playerguy.sprite == playerguy.up) {
+   magic8ball.xmove = 0;
+   magic8ball.ymove = -10;
+} else if (playerguy.sprite == playerguy.down) {
+   magic8ball.xmove = 0;
+   magic8ball.ymove = 10;
+}
