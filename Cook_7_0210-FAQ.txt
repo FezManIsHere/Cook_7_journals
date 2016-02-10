@@ -1,0 +1,16 @@
+Make a list of ten problems (e.g., FAQs) you have faced when adding orbs to your game.
+Try to provide specific code examples
+1. No enemies to kill
+2. Enemies not showing up (after I added them)
+3. Enemies don't have negative effects on the player
+Player.health -= 10000; (before I had this line they would just disappear)
+4. Orb doesn't move
+5. Orb doesn't go away
+magic8ball.setIsVisible(false); (that fixed it up)
+6. Orb only kills one enemy
+7. Enemies are too close
+8. Orb hitbox doesn't match image
+this.hitbox = new Rectangle (a, b, 32, 32); (set to 96 by 96 to be more accurate)
+9. Orb doesn't stay in the game long enough
+magic8ball.setTimeExists(25); (set it to 50 to add time)
+10. Enemies don't respawn in the same positions after win or loss
