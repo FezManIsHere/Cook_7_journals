@@ -1,0 +1,5 @@
+Describe: How was an array used in your Slick game?
+I used an array to figure out all of the blocked areas in my map, to confine my player within walls.
+
+What might be another use for an array in a different program?
+You might use it for inventory slots. Or possibly a system that has to do with checking the environment for various materials
