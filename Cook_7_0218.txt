@@ -1,0 +1,48 @@
+Explain this code:
+public Animation Playeranime, up, down, left, right, sprite, wait;
+    public Player() throws SlickException {
+        SpriteSheet runningSS = new SpriteSheet(
+                "res/ogrespritesheet.png", 64, 64, 0);
+        up = new Animation();
+        up.setAutoUpdate(true);
+        up.addFrame(runningSS.getSprite(0, 8), 330);
+        up.addFrame(runningSS.getSprite(1, 8), 330);
+        up.addFrame(runningSS.getSprite(2, 8), 330);
+        up.addFrame(runningSS.getSprite(3, 8), 330);
+        up.addFrame(runningSS.getSprite(4, 8), 330);
+        up.addFrame(runningSS.getSprite(5, 8), 330);
+        up.addFrame(runningSS.getSprite(6, 8), 330);
+        up.addFrame(runningSS.getSprite(7, 8), 330);
+        up.addFrame(runningSS.getSprite(8, 8), 330);
+
+This code sets the different pictures in the spritesheet for the "up" animation
+
+Why would it be unrealistic / unproductive  to memorize Slick syntax - what are the skills we were trying to practice?
+It would be unrealistic / unproductive because we don't even use Slick for everything, but we need to know is how to implemet other things,
+like arrays and arraylists, things we WILL need for everything.
+
+What is an array?
+A way to store multiple variables of a certain datatype.
+
+How do you make an array? Give an example.
+You make an array by doing something like:
+String [] newstrings = {"me", "you", "him", "her"};
+
+What is an ArrayList?
+An ArrayList is like an array, but you can change the size of it later on.
+
+How do you make an arraylist?
+ArrayList<Integer> aList = new ArrayList<>();
+
+In Netbeans, make an arraylist. Use autocompletion with the created arraylist (the '.' and pop-up):
+What are three useful arraylist methods that you identified?
+1. add()
+2. isEmpty()
+3. remove()
+
+What is the difference between an array and an arraylist?
+Arrays cannot have the amount of values possible changed later on. ArrayLists can.
+
+How could we make a health counter for an avatar?
+We could make a health counter by having an array that tells the player their health status. For example, a string array with values of "damaged",
+"critically damaged", "full health", or "above full health".
