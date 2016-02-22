@@ -1,0 +1,21 @@
+We will have a test on Friday.
+It will be about the notes from last week.
+Are you ready? 
+Yes, if it is multiple choice. If it isn't, I might have to study a bit to allow myself to know it well enough to answer SARs about things.
+
+What specific questions do you have about the Slick Game?
+My name is Carter Cook and I'm awesome.
+
+We will be revising our Slick game to:
+1. Have multiple levels
+2. Enemies
+3. Traps (or something) with coordinates defined by an array.
+4. Give and take damage
+5. Score
+6. Inventory or some compelling alternative.
+What will you have to do to get this working?
+I will have to get my array juices flowing and set up methods for damage and appearing/disappearing.
+
+Are you prepared? Do you have all knowledge you need? 
+If not be specific.
+Yes...to an extent. I am prepeared in terms of knowing how to set things up, but how to implement them will take some time, if I am being honest.
