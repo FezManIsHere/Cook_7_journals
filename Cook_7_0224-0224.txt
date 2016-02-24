@@ -1,0 +1,18 @@
+Define a class Rat
+public class Rat {
+}
+
+Provide the code to declare and instatiate Rats
+public static Rat splinter, leonardo, michaelangelo, donatello, raphael;
+
+splinter = new Rat(20, 20);
+leonardo = new Rat(30, 30);
+michaelangelo = new Rat(35, 35);
+donatello = new Rat(40, 40);
+raphael = new Rat(45, 45);
+
+Explain where the declaration and initialization are placed
+They are placed in the main game code, that was once called Unwavering.
+
+Provide a two-dimensional array that specifies coordinates for five rats
+public static int[][] coordinates = new int {20,30,35,40,45}{20,30,35,40,45};
