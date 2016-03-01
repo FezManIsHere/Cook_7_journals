@@ -1,0 +1,29 @@
+1. How do we make a class? What code comes at the beginning?
+public class Donut {
+}
+
+2. Donut Bismarck = new Donut();
+is this a class constructor?
+No, it uses a class constructor
+
+3. How do we make a class with values and a class constructor?
+public class Donut {
+	int x;
+	int y;
+	
+	Donut(int a, int b) {
+		this.x = a;
+		this.y = b;
+	}
+}
+
+4. Explain in your own words - what is a getter? what does it do?
+A getter is a method inside of your class that allows you to call on the values of the variable(s) that it it contains.
+
+5. What is a setter? what does it do? Give an example.
+A setter is a method in your class that lets you set the values of the variables that is contains.
+ChocolateFilled.setTemp(71);
+
+6. What is in An array of Breakfast? How would you create one?
+It would include various foods that you might have for breakfast.
+Breakfast[] foodstuffs = {"Cereal", "Oatmeal", "Orange Juice"};
