@@ -1,0 +1,13 @@
+Please describe 3 very specific things you have learned about CS or CS specific problems you have solved working with Arduino.
+You should provide AT LEAST 9 sentences worth of detail.
+I have learned the value of self evaluation/troubleshooting. These tools are excellent when we are encountering aproblem with a device/system we
+aren't familiar with. Troubleshooting and all that pertains to it (raging, google, more raging, help from Mr. Davis) is a very valuable skill that shows
+a sense of problem solving and maturity.
+
+I have also learned that listening to my partner is key. I mean, he isn't gonna stop pestering about creating methods until you do, so you might
+as well listen and get it over with. It will get the focus away from small insignificant arguments and move on to the main idea of the project.
+They might also have, you know, decent ideas.
+
+A final lesson I have learned is to not code in languages that you aren't fluent in. Writing numbered code in german isn't very smart when you take
+longer that 5 seconds to remember the spelling of the numbers. It might not be as fun, but stick to a language that you can reliably use and
+understand.
