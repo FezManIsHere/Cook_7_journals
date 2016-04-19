@@ -1,0 +1,5 @@
+Describe - what similarities do you notice between assembly and Human Resource Machine?
+They both have jumps. In both assembly and Human Resource Machine, conditionals are accomplished by jumping around to different lines of code.
+
+Describe - what differences do you notice between assembly and Human Resource Machine?
+Well, the obvious one is that assembly is actually typed code, rather that dragged boxes. Also, the commands are different.
