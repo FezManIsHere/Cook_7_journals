@@ -1,0 +1,12 @@
+We will have an end of the year assessment.
+What are 10 concepts you believe will be covered on the test. Why?
+1. OOP (object oriented programming was an important philosophy when coding in Java)
+2. Assembly (knowing the concept of high-level vs low-level is something we discussed for a while)
+3. C (we have spent quite a bit of time coding with it to make our arduinos do stuff)
+4. Arrays/ArrayLists (allowed us to make inventories/backpacks as well as blocked)
+5. Classes (we spent a lot of time learning about what these are for, and used a lot of them)
+6. Encapsulation (knowing the point of seperating code into classes (encapsulating it))
+7. Objects (how they are used and created)
+8. Declaration and Instantiation (knowing about the creation and use of variables and objects)
+9. Getters and Setters (being able to change and read variables about objects from the mold of a class)
+10. Class constructors (Knowing about how they are used to create objects with set variables from a class)
