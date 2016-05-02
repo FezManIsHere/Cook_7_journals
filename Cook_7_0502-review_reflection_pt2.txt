@@ -1,0 +1,46 @@
+In the Array Game assignment you have had to review and revisit concepts you may have forgotten about. These will all be tested on the final exam!
+What is an array?
+An array it a storage compartment for different variables of the same datatype.
+
+How does one make a simple array of Strings?
+String [] playerstring = {"Orb", "Enemy", "TreasureChest"};
+
+What is the syntax for a 2-D array?
+char[][] twodarray = new char[15][15];
+
+What is the syntax for a 3-D array?
+char[][][] threedarray = new char[6][6][6];
+
+How does one change the value for the third value in a one dimensional array? [Give specific code]
+playerstring[2] = "Statue";
+
+What is the syntax for a while loop?
+while (true){
+	int i = 0;
+	i++;
+}
+
+Why use while loops in your game?
+To allow a game to keep going until a condition is met.
+
+Your game should be in a method outside of main --- How will you call your game in main?
+You just call the method. Something like bestGameEvuurr(); would work.
+
+Why was it recommended that you use .toLowerCase() with your Scanner input?
+To keep the game from being case sensitive. If the game is case-sensitive, then it doesn't accept as many character inputs, making the player jump
+through more loops to play the game than is necessary.
+
+You should use different methods when moving the protagonist and to check for intersections. How? Why?
+You do it to make everything neat and easy to identify when a problem arises. You can do this by making a method like 
+static void checkForBad(String a, String b) {
+	if (a.equals(b)){
+	play = false;
+	}
+}
+and then
+checkforbad();
+in the game method.
+What values will you pass across methods? how? why?
+I will pass the coordinate values in Strings. This makes it, in myopinio, easier because then you just send one value for both x and y instead of
+one for each. I would send it like:
+checkForBad(playercoords, enemycoords);
