@@ -1,0 +1,33 @@
+Create a class for 'Hero'
+The class should contain:
+variables for health, score, power/weapon, dexterity, perception, level, x, y, z, and a symbol
+There should also be a class constructor accepting inputs for name, x, y, and symbol
+
+public class Hero {
+        int x = 0;
+	String name;
+	String weapon;
+	int y = 0;
+	int z = 0;
+	int health = 100;
+	int score = 0;
+	int dexterity = 20;
+	int perception = 50;
+	int level = 1;
+	char symbol = '$';	
+
+	Hero(String a, int b, int c, char d) {
+		this.x = b;
+		this.y = c;
+		this.name = a;
+		this.symbol = d;
+	}
+}
+
+Provide an example of initializing a hero object with your name
+Hero me = new Hero("Carter", 5, 5, '^');
+
+Explain why you would not initialize the hero in class hero.
+You initialize objects in the class you want to use them in, otherwise you might as well be referencing ints from the hero class anyways. The class
+constructor is a template, again, to use in the class you want to USE it in, and the class Hero is supposed to be encapsulating everything needed
+to MAKE it in the class you NEED it in.
