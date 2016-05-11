@@ -1,0 +1,15 @@
+Explain in your own words -- what happens with nested for loops?
+E.g.,
+	for (int i = 0; i <= board[0].length - 1; i++) {
+		for (int j = 0; j <= board[1].length - 1; j++) { ....}
+
+Basically, both loops have to run until their end goal is met. The inside one is run until its requirements are met, but since there is one outside
+of it, the inside had to run exponentially until the outside one had finished. So in:
+for (int i = 0; i < 10; i++) {
+	for (int f = 0; f < 10; f++) {
+		System.out.println("Wow");
+	}
+}
+
+Wow would be printed 10^10 times in order to complete it. The inside would be done the number of times it runs, to the exponent of the number of times
+the outside one runs.
