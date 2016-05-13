@@ -1,0 +1,18 @@
+The Slick assignment was intended to gently familiarize you with 2-D arrays. Some students recognized the 2-D arrays from Slick and previous
+journals --- other students had no recollection. Which were you? Why? Note - attributing the environment is not pragmatic - as students experienced
+the same environment (though they might have experienced it differently)
+I was with the former. I vaugely realized what was going on, from both the journal and the slick game. This is helped by the fact that we have been
+doing Ruby in Engineering, and it breifly covered 2D arrays.
+
+Make a list of ten questions related to the Array assignments pt 1 and 2 - that you predict will be on the semester exam. E.g., object initialization,
+class constructors, creating and changing arrays, etc.
+1. How is a 2 dimensional array different from a 1 dimensional array?
+2. Why is it a good idea to have class constructors?
+3. Where is the origin located on a 2D array if it is a plane?
+4. What order do the x, y, and z value come in on a 3D array?
+5. How might you declare an object made from a class constructor?
+6. How would you draw out a coordinate plane defined by a 2D array?
+7. How might it work for a 3D array?
+8. How do you create classes that extend each other?
+9. What process is involved the creation of random events in a game that is otherwise turn based?
+10. How might you expand the map and only show a small portion at a time?
