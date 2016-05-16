@@ -1,0 +1,22 @@
+Explain casting. Up-casting, Down-casting.
+Casting is changing dataypes. It can become more or less complex, depending what you need. You can cast ints to doubles, doubles to ints, chars to
+string, and so on.
+
+Give a specific code example for up-casting
+int mine = 2;
+double yours;
+yours = mine; //changing int to a double
+
+Give a specific code example for down-casting
+double bob = 3.14159;
+int i;
+i = (int)bob;
+
+Give a specific code example for converting a char to a String
+char b = 'b';
+String s = ""+ b;
+
+What is the range of values for byte? Why?
+-128 to 127. This is because it is a byte is 8 bits, each bit a binary number. The maximum value a byte can have is 11111111 (255) and having negative
+values means there is a two's complement. This makes the numbers easier to identify, and the system doesn't have to worry about positive zero and
+negative zero, just zero. 128 negative numbers + 127 positive numbers + 0 = 255.
